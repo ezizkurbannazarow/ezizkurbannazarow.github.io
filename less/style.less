@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+/* переменные */
+
+@active: #ff9900;
+
+/* миксины  */
+.before(){
+	&:before {
+		content: "";
+		position: absolute;
+		width: 300px;
+		height: 1px;
+		background-color: @active;
+		bottom: 0; 
+		text-align: center;
+		
+	}
+	
+}
+
+body {
+	height: 100vh;
+	background: url(../img/bg-main.png) center no-repeat ;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.calc {
+	padding-bottom: 80px;
+	width: 1072px;
+	height: 650px;
+	border: 2px solid @active;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+.tab {
+	width: 100%;
+	padding-top: 26px;
+	padding-bottom: 38px;
+	&-left, &-right {
+	display: inline-block;
+	color: white;
+	width: 200px;
+	height: 70px;
+	border-radius: 0 15px 0 0;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.77));
+	margin-right: 5px;
+	color: #cecece;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 70px;
+	cursor: pointer;
+	}
+	&-left{
+	border-radius: 15px 0 0 0;
+	}
+}
+
+.active {
+	background: @active;
+	color: #000;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 200px;
+		height: 1px;
+		background-color: @active;
+		left: 0;
+		bottom: -6px;
+	}
+}
+
+.counter {
+	width: 132px;
+	height: 60px;
+	border: 3px solid rgba(239, 174, 2, 0.6);
+    background-color: transparent;
+    text-align: center;
+    color: @active;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.blocks {
+	width: 65%;
+	margin-bottom: 30px;
+	&-title {
+		position: relative;
+		font-size: 24px;
+		color: #fff;
+		font-weight: 700;
+		.before();
+		margin-bottom: 60px;
+	}
+}
+
+#pages-block {
+	display: none;
+}
+
+.addiction {
+
+	color: @active; 
+	font-size: 28px;
+	font-weight: 700;
+	&-title {
+		text-align: center;
+		margin-bottom: 23px;
+	}
+	&-block {
+		text-align: left; 
+		input[type="checkbox"] {
+            height: 24px;width: 24px;opacity: 0.5;
+            display: inline-block;
+            margin-left: 10px;
+		}
+	}
+}
+
+.total {
+	margin-top: 30px;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	&-count {
+		width: 200px;
+		height: 60px;background-color: transparent;
+		border:none;
+		color: @active; 
+		text-align: right;
+		font-size: 50px;
+		font-weight: 700;
+
+	}
+}
+

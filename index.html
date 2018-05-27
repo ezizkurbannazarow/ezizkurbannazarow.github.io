@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="calc">
+		<div class="tab">
+			<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="tab-left active">Лэндинг</div>
+				<div class="tab-right">Многостраничник</div>
+			</div>
+			</div>
+		</div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-1">
+		<div class="blocks" id="blocks-block">
+			<div class="blocks-title">Количество блоков</div>
+		</div>
+		<div class="blocks" id="pages-block">
+			<div class="blocks-title">Количество страниц</div>
+		</div>
+		<div class="blocks">
+			<div class="blocks-title">Сколько часов на проект</div>
+		</div>
+		<div class="blocks">
+			<div class="blocks-title">Стоимость вашего часа</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="blocks" id="blocks-block">
+			<input type="number" class="counter" id="counter-block">
+		</div>
+		    <div class="blocks" id="pages-block">
+			<input type="number" class="counter" id="counter-pages">
+			</div>
+			<div class="blocks">
+			<input type="number" class="counter" id="counter-hours">
+			</div>
+			<div class="blocks">
+			<input type="number" class="counter" id="counter-rate">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="addiction">
+				<div class="addiction-title">Допольнительно
+				</div>
+				<div class="addiction-block">
+					<input class="checkbox" type="checkbox" id="changes-check">
+					Возможность редактировать текст на сайте
+				</div>
+				<div class="addiction-block">
+					<input class="checkbox" type="checkbox" id="changes-cms">
+					Установка на CMS
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="total">
+		Общая стоимость
+		<input value="5000" type="text" class="total-count" id="total-value">
+	</div>
+</div>
+		
+	
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
